@@ -5,4 +5,8 @@ class Board
     @width = width
     @board_array = Array.new(height * width, 0)
   end
+
+  def coordinate_to_index(x, y)
+    x + (y * width)
+  end
 end
